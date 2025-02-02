@@ -1,8 +1,10 @@
+import Form from "./components/Form";
+
 function App() {
   return (
-    <>
-      <h1>hola mundo</h1>
-    </>
+    <main className="flex justify-center items-center h-dvh">
+      <Form />
+    </main>
   );
 }
 
