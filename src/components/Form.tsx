@@ -16,10 +16,14 @@ function Form() {
     formState: { errors },
   } = useForm<FormData>();
 
+  const onSubmit = (data: FormData) => {
+    console.log("Form Data:", data);
+  };
+
   return (
     <form
       className="bg-white rounded-2xl p-8 text-Grey-darker mx-5"
-      onSubmit={handleSubmit(onsubmit)}
+      onSubmit={handleSubmit(onSubmit)}
     >
       <h2 className="text-2xl font-bold">Contact Us</h2>
       <section className="md:flex md:gap-8">
